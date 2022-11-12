@@ -19,7 +19,7 @@ const Three = (props) => {
                     icon={
                         <img src={`${process.env.PUBLIC_URL}/assets/images/quality.png`} className='w-[5rem]' />
                     }
-                    text='Quality'
+                    text='Overall experience'
                 />
 
                 <CircleIcon
