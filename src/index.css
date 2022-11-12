@@ -32,7 +32,7 @@ h5 {
 
 @media screen and (max-width:640px) {
     :root {
-        font-size: 0.75rem;
+        font-size: 14px;
     }
 
     .main-bg-cover {
