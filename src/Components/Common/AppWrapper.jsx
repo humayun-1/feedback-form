@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Svgs from './Svgs'
 
 const AppWrapper = (props) => {
+    useEffect(() => {
+        let main_bg_cover = document.querySelector('.main-bg-cover');
+    }, [])
+    
     return (
         <div className='main-bg-cover min-h-[100vh] flex flex-col text-white'>
             <div className='container mx-auto text-center flex-1 flex flex-col'>

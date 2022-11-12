@@ -113,3 +113,12 @@ input[type=number] {
     background: linear-gradient(0deg, rgba(255, 173, 222, 1) 0%, rgba(214, 99, 168, 1) 62%);
     border-radius: 12px;
 }
+
+body {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+}
+
+html {
+    height: -webkit-fill-available;
+}
