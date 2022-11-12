@@ -4,10 +4,11 @@ import Svgs from './Svgs'
 const AppWrapper = (props) => {
     useEffect(() => {
         let main_bg_cover = document.querySelector('.main-bg-cover');
+        main_bg_cover.style.cssText = `min-height:${window.innerHeight}px;`;
     }, [])
-    
+
     return (
-        <div className='main-bg-cover min-h-[100vh] flex flex-col text-white'>
+        <div className='main-bg-cover flex flex-col text-white'>
             <div className='container mx-auto text-center flex-1 flex flex-col'>
                 <div className='flex flex-col gap-8 justify-between flex-1 px-[1rem]'>
                     <div>
