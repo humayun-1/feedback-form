@@ -17,7 +17,7 @@ const Three = (props) => {
                         handleChange()
                     }}
                     icon={
-                        <img src={`${process.env.PUBLIC_URL}/assets/images/quality.png`} className='w-[3rem]' />
+                        <img src={`${process.env.PUBLIC_URL}/assets/images/quality.png`} className='w-[5rem]' />
                     }
                     text='Quality'
                 />
@@ -37,9 +37,9 @@ const Three = (props) => {
                         handleChange()
                     }}
                     icon={
-                        <Svgs.Cleanliness />
+                        <img src={`${process.env.PUBLIC_URL}/assets/images/food.png`} className='w-[5rem]' />
                     }
-                    text='Cleanliness'
+                    text='Food'
                 />
 
                 <CircleIcon
@@ -47,9 +47,9 @@ const Three = (props) => {
                         handleChange()
                     }}
                     icon={
-                        <img src={`${process.env.PUBLIC_URL}/assets/images/food.png`} className='w-[3rem]' />
+                        <Svgs.Cleanliness />
                     }
-                    text='Food'
+                    text='Cleanliness'
                 />
             </div>
         </div>
