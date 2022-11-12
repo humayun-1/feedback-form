@@ -11,7 +11,7 @@ const Three = (props) => {
     return (
         <div className='slide-in-right  flex flex-col gap-6 items-center'>
             <h1 className='text-3xl font-extrabold'>What did you like about your visit to Savour Foods?</h1>
-            <div className='flex items-center justify-center gap-5'>
+            <div className='flex items-center justify-center gap-5 flex-wrap'>
                 <CircleIcon
                     onClick={() => {
                         handleChange()

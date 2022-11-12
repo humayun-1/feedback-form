@@ -26,7 +26,7 @@ const Eight = (props) => {
                         onChange={() => { }}
                         placeholder="Enter phone number" />
                 </div>
-                <div className='flex items-center justify-center gap-5'>
+                <div className='flex items-center justify-center gap-5 flex-wrap'>
                     <CircleIcon
                         onClick={() => {
                         }}

@@ -13,7 +13,7 @@ const AppWrapper = (props) => {
                         {props.children}
                     </div>
                     <div className='flex flex-col gap-2 pb-[2rem]'>
-                        <img src={`${process.env.PUBLIC_URL}/assets/images/footer-hand.png`} className="h-[10rem] w-fit mx-auto" />
+                        <img src={`${process.env.PUBLIC_URL}/assets/images/footer-hand.png`} className="w-[14rem] mx-auto" />
                     </div>
                 </div>
             </div>
