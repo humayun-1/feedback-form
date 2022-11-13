@@ -17,7 +17,7 @@ const HowManyTimes = (props) => {
     return (
         <div className='slide-in-right flex flex-col gap-6 items-center'>
             <h1 className='text-3xl font-extrabold'>{Text.text}</h1>
-            <div className='grid grid-cols-2 gap-6 flex-wrap'>
+            <div className='grid md:grid-cols-2 gap-6 flex-wrap'>
                 <div className="flex items-center gap-2">
                     <input onChange={handleChange} className="h-5 w-5 accent-[#d562a7]" type="checkbox" value="" id="checkbox_1" />
                     <label htmlFor="checkbox_1" className='cursor-pointer'>
