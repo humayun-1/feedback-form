@@ -139,6 +139,7 @@ const data = () => {
                 options: [
                     'Name',
                     'Age',
+                    'Branch Name',
                     'Enter phone number',
                     'Male',
                     'Female',
@@ -151,6 +152,7 @@ const data = () => {
                 options: [
                     'نام',
                     'عمر',
+                    'برانچ کا نام',
                     'فون نمبر',
                     'مرد',
                     'عورت',
