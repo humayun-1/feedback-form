@@ -15,7 +15,7 @@ const HowManyTimes = (props) => {
 
 
     return (
-        <div className='slide-in-right flex flex-col gap-6 items-center'>
+        <div className='slide-in-right flex flex-col gap-6 items-center justify-center'>
             <h1 className={`text-3xl font-extrabold ${Text?.lang == 'UR' && 'urdu'}`}>{Text.text}</h1>
             <div className='grid md:grid-cols-2 gap-6 flex-wrap'>
                 <div className="flex items-center gap-2 md:justify-start justify-center">
