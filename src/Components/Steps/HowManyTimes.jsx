@@ -20,25 +20,25 @@ const HowManyTimes = (props) => {
             <div className='grid md:grid-cols-2 gap-6 flex-wrap'>
                 <div className="flex items-center gap-2">
                     <input onChange={handleChange} className="h-5 w-5 accent-[#d562a7]" type="checkbox" value="" id="checkbox_1" />
-                    <label htmlFor="checkbox_1" className='cursor-pointer'>
+                    <label htmlFor="checkbox_1" className='text-lg cursor-pointer'>
                         {Text?.options ? Text.options[0] : ''}
                     </label>
                 </div>
                 <div className="flex items-center gap-2">
                     <input onChange={handleChange} className="h-5 w-5 accent-[#d562a7]" type="checkbox" value="" id="checkbox_2" />
-                    <label htmlFor="checkbox_2" className='cursor-pointer'>
+                    <label htmlFor="checkbox_2" className='text-lg cursor-pointer'>
                         {Text?.options ? Text.options[1] : ''}
                     </label>
                 </div>
                 <div className="flex items-center gap-2">
                     <input onChange={handleChange} className="h-5 w-5 accent-[#d562a7]" type="checkbox" value="" id="checkbox_3" />
-                    <label htmlFor="checkbox_3" className='cursor-pointer'>
+                    <label htmlFor="checkbox_3" className='text-lg cursor-pointer'>
                         {Text?.options ? Text.options[2] : ''}
                     </label>
                 </div>
                 <div className="flex items-center gap-2">
                     <input onChange={handleChange} className="h-5 w-5 accent-[#d562a7]" type="checkbox" value="" id="checkbox_4" />
-                    <label htmlFor="checkbox_4" className='cursor-pointer'>
+                    <label htmlFor="checkbox_4" className='text-lg cursor-pointer'>
                         {Text?.options ? Text.options[3] : ''}
                     </label>
                 </div>

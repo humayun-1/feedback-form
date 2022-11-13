@@ -21,7 +21,7 @@ const Nine = (props) => {
                     The feedback has been submitted.
                 </h1>
             </div>
-            <button onClick={handleChange} className='hover:bg-[#D55AA3] border border-white px-6 py-2 rounded-lg transition-all bg-white text-[#D55AA3] ease-out font-semibold text-lg hover:text-white'>Go to Homepage</button>
+            <button onClick={handleChange} className='hover:bg-[#D55AA3] border border-white px-6 py-2 rounded-lg transition-all bg-white text-[#D55AA3] ease-out font-semibold text-lg hover:text-white'>Fill the NExt form</button>
         </div>
     )
 }
