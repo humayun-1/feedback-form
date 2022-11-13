@@ -14,7 +14,7 @@ const AppWrapper = (props) => {
                     <div>
                         <img src={`${process.env.PUBLIC_URL}/assets/images/SavourLogo.png`} className="h-[7rem] mx-auto" />
                     </div>
-                    <div className='overflow-hidden'>
+                    <div className=''>
                         {props.children}
                     </div>
                     <div className='flex flex-col gap-2 pb-[2rem]'>
