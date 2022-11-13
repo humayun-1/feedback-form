@@ -22,7 +22,7 @@ const Intro = (props) => {
                 <h1 className='text-xl font-extrabold'>
                     Connect with the Top Management
                 </h1>
-                <h1 className='text-xl font-extrabold font-sans'>
+                <h1 className='text-xl font-extrabold urdu'>
                     اعلیٰ انتظامیہ سے جڑیں۔
                 </h1>
             </div>

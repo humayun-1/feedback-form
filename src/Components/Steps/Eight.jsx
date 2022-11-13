@@ -22,8 +22,8 @@ const Eight = (props) => {
 
     return (
         <div className='slide-in-right  flex flex-col gap-6 items-center'>
-            <h1 className='text-3xl font-extrabold'>{Text.text}</h1>
-            <div className='flex flex-col items-center gap-5'>
+            <h1 className={`text-3xl font-extrabold ${Text?.lang == 'UR' && 'urdu'}`}>{Text.text}</h1>
+            <div className={`flex flex-col items-center gap-5 ${Text?.lang == 'UR' && 'urdu'}`}>
                 <Input placeholder={Text?.options ? Text.options[0] : ''} />
                 <Input type='number' placeholder={Text?.options ? Text.options[1] : ''} />
                 <div className='bg-white rounded-lg px-2 py-[0.4rem] text-black input_num'>
@@ -31,7 +31,7 @@ const Eight = (props) => {
                         onChange={() => { }}
                         placeholder={Text?.options ? Text.options[2] : ''} />
                 </div>
-                <div className='flex items-center justify-center gap-5 flex-wrap'>
+                <div className={`flex items-center justify-center gap-5 flex-wrap ${Text?.lang == 'UR' && 'urdu'}`}>
                     <CircleIcon
                         onClick={() => {
                         }}

@@ -2,19 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Marhey:wght@600&display=swap');
+
 @font-face {
-    font-family: Inter-bold !important;
-    src: url('/public/assets/fonts/Inter-ExtraBold.otf') !important;
+    font-family: Inter-bold;
+    src: url('/public/assets/fonts/Inter-ExtraBold.woff');
 }
 
 @font-face {
-    font-family: Inter !important;
-    src: url('/public/assets/fonts/Inter-Regular.otf') !important;
+    font-family: Inter;
+    src: url('/public/assets/fonts/Inter-Regular.woff');
+}
+
+
+.urdu {
+    font-family: 'Marhey', cursive !important;
 }
 
 body {
-    font-family: Inter, sans-serif !important;
-    font-display: swap; 
+    font-family: Inter;
+    font-display: swap;
     overflow-x: hidden;
 }
 
@@ -23,8 +30,8 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: Inter-bold, sans-serif !important;
-    font-display: swap; 
+    font-family: Inter-bold;
+    font-display: swap;
 }
 
 .main-bg-cover {
@@ -215,4 +222,3 @@ input[type=number] {
         opacity: 1;
     }
 }
-

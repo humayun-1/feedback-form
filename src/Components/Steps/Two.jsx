@@ -18,8 +18,8 @@ const Two = (props) => {
 
     return (
         <div className='slide-in-right  flex flex-col gap-6 items-center'>
-            <h1 className='text-3xl font-extrabold'>{Text?.text}</h1>
-            <div className='flex items-center justify-center gap-5 flex-wrap'>
+            <h1 className={`text-3xl font-extrabold ${Text?.lang == 'UR' && 'urdu'}`}>{Text?.text}</h1>
+            <div className={`flex items-center justify-center gap-5 flex-wrap ${Text?.lang == 'UR' && 'urdu'}`}>
                 <CircleIcon
                     onClick={() => {
                         handleChange()
