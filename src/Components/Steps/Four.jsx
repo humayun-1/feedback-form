@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react'
 import CircleIcon from '../Common/CircleIcon'
 import Svgs from '../Common/Svgs'
@@ -8,9 +8,15 @@ const Three = (props) => {
     const handleChange = (param) => {
         props.setActive(props.Active + 1)
     }
+
+    const [Text, setText] = useState([]);
+    useEffect(() => {
+        setText(props.Language)
+    }, [props.Language])
+
     return (
         <div className='slide-in-right  flex flex-col gap-6 items-center'>
-            <h1 className='text-3xl font-extrabold'>What did you like about your visit to Savour Foods?</h1>
+            <h1 className='text-3xl font-extrabold'>{Text?.text}</h1>
             <div className='flex items-center justify-center gap-5 flex-wrap'>
                 <CircleIcon
                     onClick={() => {
@@ -19,7 +25,7 @@ const Three = (props) => {
                     icon={
                         <img src={`${process.env.PUBLIC_URL}/assets/images/quality.png`} className='w-[5rem]' />
                     }
-                    text='Overall experience'
+                    text={Text?.options ? Text.options[0] : ''}
                 />
 
                 <CircleIcon
@@ -29,7 +35,7 @@ const Three = (props) => {
                     icon={
                         <Svgs.Service />
                     }
-                    text='Service'
+                    text={Text?.options ? Text.options[1] : ''}
                 />
 
                 <CircleIcon
@@ -39,7 +45,7 @@ const Three = (props) => {
                     icon={
                         <img src={`${process.env.PUBLIC_URL}/assets/images/food.png`} className='w-[5rem]' />
                     }
-                    text='Food'
+                    text={Text?.options ? Text.options[2] : ''}
                 />
 
                 <CircleIcon
@@ -49,7 +55,7 @@ const Three = (props) => {
                     icon={
                         <Svgs.Cleanliness />
                     }
-                    text='Cleanliness'
+                    text={Text?.options ? Text.options[3] : ''}
                 />
             </div>
         </div>

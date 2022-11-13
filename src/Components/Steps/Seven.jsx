@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react'
 import CircleIcon from '../Common/CircleIcon'
 import Input from '../Common/Input'
@@ -13,9 +13,15 @@ const Eight = (props) => {
     const handleChange = (param) => {
         props.setActive(props.Active + 1)
     }
+
+    const [Text, setText] = useState([]);
+    useEffect(() => {
+        setText(props.Language)
+    }, [props.Language])
+
     return (
         <div className='slide-in-right  flex flex-col gap-6 items-center'>
-            <h1 className='text-3xl font-extrabold'>Any Suggestions?</h1>
+            <h1 className='text-3xl font-extrabold'>{Text.text}</h1>
             <div className='flex flex-col items-center gap-5'>
                 <div className='p-4 bg-white rounded-lg relative pb-[3rem]'>
                     <textarea className='resize-none outline-none text-[#555555]' cols="30" rows="6" placeholder='Write Something Here...'></textarea>
