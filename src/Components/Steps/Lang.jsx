@@ -11,7 +11,7 @@ const Lang = (props) => {
     return (
         <div className='slide-in-right flex flex-col gap-6 items-center'>
             <h1 className='text-3xl font-extrabold'>Please select your language?</h1>
-            <h1 className='text-3xl font-extrabold'>زبان کا انتخاب کیجیے۔</h1>
+            <h1 className='text-3xl font-extrabold lang'>زبان کا انتخاب کیجیے۔</h1>
             <div className='flex items-center justify-center gap-5 flex-wrap'>
                 <CircleIcon
                     onClick={() => {
