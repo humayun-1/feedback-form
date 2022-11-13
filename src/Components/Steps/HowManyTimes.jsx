@@ -18,25 +18,25 @@ const HowManyTimes = (props) => {
         <div className='slide-in-right flex flex-col gap-6 items-center'>
             <h1 className={`text-3xl font-extrabold ${Text?.lang == 'UR' && 'urdu'}`}>{Text.text}</h1>
             <div className='grid md:grid-cols-2 gap-6 flex-wrap'>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 justify-center">
                     <input onChange={handleChange} className="h-5 w-5 accent-[#d562a7]" type="checkbox" value="" id="checkbox_1" />
                     <label htmlFor="checkbox_1" className={`text-lg cursor-pointer w-max ${Text?.lang == 'UR' && 'urdu'}`}>
                         {Text?.options ? Text.options[0] : ''}
                     </label>
                 </div>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 justify-center">
                     <input onChange={handleChange} className="h-5 w-5 accent-[#d562a7]" type="checkbox" value="" id="checkbox_2" />
                     <label htmlFor="checkbox_2" className={`text-lg cursor-pointer w-max ${Text?.lang == 'UR' && 'urdu'}`}>
                         {Text?.options ? Text.options[1] : ''}
                     </label>
                 </div>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 justify-center">
                     <input onChange={handleChange} className="h-5 w-5 accent-[#d562a7]" type="checkbox" value="" id="checkbox_3" />
                     <label htmlFor="checkbox_3" className={`text-lg cursor-pointer w-max ${Text?.lang == 'UR' && 'urdu'}`}>
                         {Text?.options ? Text.options[2] : ''}
                     </label>
                 </div>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 justify-center">
                     <input onChange={handleChange} className="h-5 w-5 accent-[#d562a7]" type="checkbox" value="" id="checkbox_4" />
                     <label htmlFor="checkbox_4" className={`text-lg cursor-pointer w-max ${Text?.lang == 'UR' && 'urdu'}`}>
                         {Text?.options ? Text.options[3] : ''}
