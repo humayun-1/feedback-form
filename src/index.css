@@ -3,17 +3,17 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: Inter-bold;
-    src: url('/public/assets/fonts/Inter-ExtraBold.otf');
+    font-family: Inter-bold !important;
+    src: url('/public/assets/fonts/Inter-ExtraBold.otf') !important;
 }
 
 @font-face {
-    font-family: Inter;
-    src: url('/public/assets/fonts/Inter-Regular.otf');
+    font-family: Inter !important;
+    src: url('/public/assets/fonts/Inter-Regular.otf') !important;
 }
 
 body {
-    font-family: Inter, sans-serif;
+    font-family: Inter, sans-serif !important;
     overflow-x: hidden;
 }
 
@@ -22,7 +22,7 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: Inter-bold, sans-serif;
+    font-family: Inter-bold, sans-serif !important;
 }
 
 .main-bg-cover {
